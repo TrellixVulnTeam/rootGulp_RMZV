@@ -1,0 +1,17 @@
+@mixin font($font__name, $file__name, $weight, $style) {
+    @font-face {
+        font-family: $font__name;
+        font-display: swap;
+        src: url("../fonts/#{$file__name}.woff") format("woff"), url("../fonts/#{$file__name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+@import "nullstyle.scss";
+@import "fonts.scss";
+
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";
+
